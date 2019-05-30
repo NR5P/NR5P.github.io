@@ -84,7 +84,7 @@ a {
 .myPic {
 }
 
-div > img {
+#stand-img {
     margin-top: 10px;
     height: 300px;
     opacity: 0;
@@ -107,4 +107,37 @@ a {
 
 iframe {
     height: 100%;
+}
+
+#projects-header {
+
+}
+
+#current-img {
+    height: 275px;
+    border: 1px solid white;
+}
+
+#images-line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    margin: 0 40px;
+}
+
+#images-line > img {
+    height: 200px;
+    border: 1px solid white;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
 }
