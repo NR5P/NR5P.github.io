@@ -118,16 +118,28 @@ iframe {
     border: 1px solid white;
 }
 
+#main-img {
+    animation-name: moveOver;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveOver {
+    0%{}
+    100% {margin-bottom: 200px;}
+}
+
 #images-line {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
     margin: 0 40px;
 }
 
 #images-line > img {
-    height: 200px;
+    height:150px;
     border: 1px solid white;
+    margin: 5px;
 }
 
 
